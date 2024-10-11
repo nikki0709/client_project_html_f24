@@ -47,25 +47,27 @@
     list-style-type: none;
     padding: 0;
     margin: 15px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
 .navigation nav ul li {
     display: inline;
-}
-
-.navigation nav ul li a {
-    text-decoration: none;
     color: #FFCB05;
-    /* U of M Yellow */
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #003366;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color:white
 }
 
 .navigation nav ul li a:hover {
