@@ -22,7 +22,7 @@
 }
 
 .navigation img {
-    max-width: 10rem;
+    max-height: 10rem;
     height: auto;
     margin: 0 auto;
 }
@@ -119,17 +119,17 @@ section ul li {
 }
 
 footer {
+    background-color: #00274C;
     text-align: center;
-    color: #00274C;
+    color: white;
     padding: 15px;
-    border-radius: 12px;
 }
 
 footer a {
-    color: #00274C;
+    color: white;
     text-decoration: underline;
     font-weight: bold;
-    transition: color 0.3s ease;
+    /* transition: color 0.3s ease; */
 }
 
 footer a:hover {
