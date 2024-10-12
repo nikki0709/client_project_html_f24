@@ -5,7 +5,6 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-rows: repeat(6, auto);
@@ -67,7 +66,7 @@
 
 .navigation nav ul li a {
     text-decoration: none;
-    color:white
+    color: white
 }
 
 .navigation nav ul li a:hover {
@@ -128,19 +127,41 @@ section ul li {
 
 footer {
     text-align: center;
-    background-color: #00274C;
-    color: #FFCB05;
+    /* background-color: #545454; */
+    color: #00274C;
     padding: 15px;
     border-radius: 12px;
 }
 
 footer a {
-    color: #FFCB05;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #FFC300;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.skip a {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: top 0.3s ease;
+}
+
+.skip a:focus {
+    top: 10px;
+    left: 10px;
 }
