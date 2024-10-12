@@ -43,7 +43,7 @@ h1 {
     grid-template-columns: repeat(4, auto);
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.2em;
 }
 
 /* .navigation nav ul li {
@@ -61,7 +61,7 @@ h1 {
 }
 
 .navigation a {
-    font-size: 1.2em;
+    font-size: 1rem;
     color: white;
     background-color: #003366;
     font-weight: bold;
@@ -122,14 +122,14 @@ footer {
     background-color: #00274C;
     text-align: center;
     color: white;
+    font-weight: bold;
     padding: 15px;
 }
 
 footer a {
     color: white;
     text-decoration: underline;
-    font-weight: bold;
-    /* transition: color 0.3s ease; */
+    font: 1em sans-serif;
 }
 
 footer a:hover {
@@ -158,4 +158,7 @@ nav a:focus {
     left: 10px;
 }
 
+.skip a:hover{
+    color:green;
+}
 
