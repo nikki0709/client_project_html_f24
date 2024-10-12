@@ -18,7 +18,7 @@
 .grid-item {
     background-color: #ffffff;
     border-radius: 0.75em;
-    padding: 1em;
+    padding: 0.7em;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,7 +45,7 @@
 .navigation nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 15px 0;
+    margin: 1em 0;
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
@@ -57,9 +57,9 @@
     display: inline;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
     background-color: #003366;
-    border-radius: 8px;
+    border-radius: 1.5em;
 }
 
 .navigation a.active {
@@ -88,9 +88,9 @@
 section h2 {
     font-size: 1.5rem;
     color: #00274C;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #FFCB05;
-    padding-bottom: 5px;
+    margin-bottom: 0.625em;
+    border-bottom: 0.125em solid #FFCB05;
+    padding-bottom: 0.3125rem;
 }
 
 section p {
@@ -146,12 +146,12 @@ nav a:focus {
 
 .skip a {
     position: absolute;
-    top: -40px;
-    left: 10px;
+    top: -2.5em;
+    left: 0.625em;
     background-color: #FFCB05;
     color: #00274C;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.5em;
+    border-radius: 0.5em;
     text-decoration: none;
     transition: top 0.3s ease;
 }
