@@ -22,7 +22,6 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .navigation {
     background-color: #00274C;
     color: white;
@@ -56,34 +55,25 @@
 
 .navigation nav ul li {
     display: inline;
-    color: #FFCB05;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #003366;
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navigation nav ul li a {
+.navigation a.active {
     text-decoration: none;
-    color: white
+    color: #FFC300
 }
 
-.navigation nav ul li a:hover {
-    background-color: #FFC300;
-    color: #00274C;
+.navigation a {
+    color: white;
 }
 
-.intro {
-    text-align: center;
-    background-color: #FFCB05;
-    color: #00274C;
-}
 
-.intro p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+.navigation a:hover {
+    color: green;
 }
 
 section h2 {
@@ -106,9 +96,6 @@ section article h3 {
     margin-bottom: 8px;
 }
 
-section figure {
-    margin-bottom: 10px;
-}
 
 section img {
     max-width: 100%;
@@ -134,7 +121,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: #00274C;
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -165,3 +152,8 @@ nav a:focus {
     top: 10px;
     left: 10px;
 }
+
+/* h2 {
+font-size: 1.5rem;
+text-align: center;
+} */
