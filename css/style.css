@@ -145,8 +145,8 @@ nav a:focus {
     position: absolute;
     top: -2.5em;
     left: 0.625em;
-    background-color: #FFCB05;
-    color: #00274C;
+    background-color: #FFC300;
+    color: black;
     padding: 0.5em;
     border-radius: 0.5em;
     text-decoration: none;
@@ -159,6 +159,5 @@ nav a:focus {
 }
 
 .skip a:hover{
-    color:green;
+    color: #2E2CAF;
 }
-
