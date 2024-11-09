@@ -10,7 +10,7 @@
     grid-auto-flow: row;
     gap: 2em;
     padding: 1em;
-   /* justify-content: center; */
+    /* justify-content: center; */
 }
 
 
@@ -46,14 +46,6 @@ h1 {
     gap: 0.2em;
 }
 
-/* .navigation nav ul li {
-    display: inline;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.625em 1.25em;
-    background-color: #003366;
-    border-radius: 1.5em;
-} */
 
 .navigation a.active {
     text-decoration: none;
@@ -104,8 +96,10 @@ h1 {
 }
 
 .grid-item img {
-    max-inline-size: 100%;
-    max-block-size: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 section ul {
@@ -158,6 +152,42 @@ nav a:focus {
     left: 10px;
 }
 
-.skip a:hover{
+.skip a:hover {
     color: #2E2CAF;
 }
+
+button:hover {
+    background-color: #FFC300;
+}
+
+@media screen and (min-width: 900px) {
+    .navigation ul {
+        display: grid;
+        justify-content: normal
+    }
+
+    .navigation a {
+        font-size: 1.2rem;
+    }
+
+    .grid-item h2 {
+        font-size: 2rem;
+    }
+
+    .grid-item p {
+        font-size: 1.2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2em;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+

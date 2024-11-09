@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg">
+
     <title>Student Success Portal</title>
 </head>
 
@@ -84,14 +86,53 @@
                     community service projects to make a positive impact.</li>
             </ul>
         </section>
+
+        <section class="grid-item feedback-form">
+            <h2>Leave Us a Feedback</h2>
+            <form action="https://formspree.io/f/xyzyjgpo" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" name="name" required><br><br>
+
+                <fieldset>
+                    <legend>Pronouns:</legend>
+                    <input type="radio" id="he_him" name="pronouns" value="He/Him">
+                    <label for="he_him">He/Him</label>
+
+                    <input type="radio" id="she_her" name="pronouns" value="She/Her">
+                    <label for="she_her">She/Her</label>
+
+                    <input type="radio" id="they_them" name="pronouns" value="They/Them">
+                    <label for="they_them">They/Them</label>
+
+                    <input type="radio" id="other" name="pronouns" value="Other">
+                    <label for="other">Other</label>
+                </fieldset><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your UMich email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Format: 123-456-7890" name="phone"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a
+        <p><span id="year"></span>&copy MSI Academic Advising | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
                 Academic Advising</a>
         </p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    </section>
+
 </body>
 
 </html>
