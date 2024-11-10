@@ -83,12 +83,14 @@
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a
+        <p><span id="year"></span>&copy MSI Academic Advising | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
                 Academic Advising</a>
         </p>
     </footer>
-    </div>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
